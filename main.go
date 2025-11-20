@@ -1,16 +1,10 @@
-# klogs-pgw-go
-Klogs Payment Gateway Golang client package
-
-Example Payment Request: 
-
-```go
 package main
 
 import (
 	"context"
 	"fmt"
 
-	klogs "github.com/klogs-hub/paymentgateway-go/client"
+	klogs "github.com/klogs/klogs-pgw-go/client"
 )
 
 func main() {
@@ -45,4 +39,3 @@ func main() {
 		fmt.Println(resp.Success)
 	}
 }
-```
