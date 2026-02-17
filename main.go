@@ -11,7 +11,7 @@ func main() {
 	client, _ := klogs.New(
 		"lrM54xgeBRw6kABrmyz5GixNW54Eg9zWt3Orgi35E",
 		"G99T1V+bzzfU+X0Zv+xvCB4LwLstYtymL8ybsZjvdLGzl98EuNh3AeYUCA1pAOYa6rxv3Y5HsFvhs2v3ufx+nQ==",
-		"https://pgw.klogs.io",
+		"https://pgw.klogs.dev",
 	)
 
 	resp, err := client.CardPayment.Pay(context.Background(), klogs.CreatePaymentRequest{
