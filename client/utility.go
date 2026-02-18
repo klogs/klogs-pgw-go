@@ -13,8 +13,7 @@ import (
 )
 
 const (
-	allowedChars     = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-	ticksAtUnixEpoch = 621355968000000000
+	allowedChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 )
 
 var randomizer = rand.New(rand.NewSource(1))
@@ -29,9 +28,7 @@ func UrlFriendlyRandomString(length int) string {
 }
 
 func UTCTicks() int64 {
-	nanos := time.Now().UTC().UnixNano()
-
-	return nanos/100 + ticksAtUnixEpoch
+	return time.Now().UnixMilli()
 }
 
 func HMACSHA256(cipherText, password string) string {
